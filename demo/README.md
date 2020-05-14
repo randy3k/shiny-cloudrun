@@ -11,5 +11,5 @@ gcloud builds submit --tag gcr.io/$PROJECTID/shinydemo
 
 Deploy the app
 ```
-gcloud run deploy --image gcr.io/$PROJECTID/shinydemo --platform managed --memory 1G
+gcloud run deploy --image gcr.io/$PROJECTID/shinydemo --platform managed --max-instances 1 --memory 1G
 ```
